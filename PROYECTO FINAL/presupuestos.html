@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Taller Mecánico Meco - Presupuesto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container top-bar">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logotipo del Taller Mecánico">
+        <span>Taller Mecánico Meco</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Servicios</a></li>
+          <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Solicita tu presupuesto</h2>
+      <p>Indícanos qué necesita tu vehículo y te responderemos lo antes posible.</p>
+
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50">
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}">
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Solicite más información</label>
+          <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">Acepto la Política de privacidad</label>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="social">
+        <span>Síguenos:</span>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="img/redes/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="img/redes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="img/redes/twitter.png" alt="Twitter">
+        </a>
+      </div>
+      <div class="direccion">
+        <p>Calle del Motor 45, 28880 Meco, Madrid</p>
+      </div>
+      <div class="legal">
+        <p>&copy; 2026 Taller Mecánico Meco · <a href="#">Aviso legal</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
